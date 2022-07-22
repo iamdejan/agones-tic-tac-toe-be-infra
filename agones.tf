@@ -1,5 +1,5 @@
 module "agones" {
-  source = "git::https://github.com/googleforgames/agones.git//install/terraform/modules/helm3/?ref=main"
+  source = "git::https://github.com/googleforgames/agones.git//install/terraform/modules/helm3/?ref=v1.24.0"
 
   agones_version         = ""
   values_file            = ""
