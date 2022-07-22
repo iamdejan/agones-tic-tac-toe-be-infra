@@ -6,6 +6,6 @@ module "agones" {
   feature_gates          = ""
   host                   = module.gke.kubernetes_cluster_host
   token                  = module.gke.project_access_token
-  cluster_ca_certificate = module.gke.cluster_ca_certificate
+  cluster_ca_certificate = base64decode(module.gke.cluster_ca_certificate)
   log_level              = "info"
 }
